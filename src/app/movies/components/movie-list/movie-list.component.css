@@ -1,6 +1,53 @@
 .movieDetails {
-    margin-bottom: 15px;
+    display: block;
+    margin: 15px;
+    flex: 1 0 21%;
+    width: 100%;
 }
+
+.movieListContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+@media all and (max-width: 1200px) {
+    .movieDetails {
+        margin: 15px;
+        flex: 1 0 45%;
+        width: 100%;
+    }
+
+    .movieName {
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .movieDetails {
+        display: block;
+        margin: 15px;
+        flex: 1 0 80%;
+    }
+
+    .movieDetailsRow{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .movieImage {
+        
+    }
+
+    .movieName {
+        margin-left: 15px;
+       
+    }
+}
+
 
 .header-img {
     height: 400px;

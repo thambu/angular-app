@@ -1,12 +1,14 @@
-<div class="container">
+<div class="container movieListContainer">
     <div  *ngFor ="let movie of movies" 
     [routerLink]="['/details', movie.name]"
-     class="row movieDetails">
-      <div class="col-2">
-          <img src="../../../assets/images/{{movie.image}}">
-      </div>
-      <div class="col-10">
-          <div class="text-left font-weight-bold"> {{movie.name}} </div>
-      </div>
+     class="movieDetails">
+     <span class="movieDetailsRow">
+        <div class="movieImage">
+            <img src="../../../assets/images/{{movie.image}}">
+        </div>
+        <div class="movieName">
+            <div class="text-left font-weight-bold"> {{movie.name}} </div>
+        </div>
+    </span>
     </div>
   </div>
