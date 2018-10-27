@@ -1,0 +1,10 @@
+<div class="container">
+    <div  *ngFor ="let movie of movies" (click)='onSelect(movie)' class="row movieDetails">
+      <div class="col-2">
+          <img src="../../../assets/images/{{movie.image}}">
+      </div>
+      <div class="col-10">
+          <div class="text-left font-weight-bold"> {{movie.name}} </div>
+      </div>
+    </div>
+  </div>

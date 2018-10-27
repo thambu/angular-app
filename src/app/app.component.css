@@ -1,0 +1,15 @@
+.header {
+    display: block;
+    text-align: left;
+    font-size: xx-large; 
+    height: 200px;
+    background-image: url('/assets/images/background.png');
+    background-position: center; /* Center the image */
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.title {
+    padding-top: 2%;
+    margin-left: 10%;
+}
