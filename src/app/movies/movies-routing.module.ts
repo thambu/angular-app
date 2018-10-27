@@ -5,6 +5,6 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
 export const moviesRoutes: Routes = [
   { path: '', component: MovieListComponent, 
      children: [
-       { path: 'details', component: MovieDetailsComponent}
+       { path: '/details/:name', component: MovieDetailsComponent}
      ]}
 ]

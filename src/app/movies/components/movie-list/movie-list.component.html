@@ -1,5 +1,7 @@
 <div class="container">
-    <div  *ngFor ="let movie of movies" (click)='onSelect(movie)' class="row movieDetails">
+    <div  *ngFor ="let movie of movies" 
+    [routerLink]="['/details', movie.name]"
+     class="row movieDetails">
       <div class="col-2">
           <img src="../../../assets/images/{{movie.image}}">
       </div>

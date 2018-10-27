@@ -13,7 +13,7 @@ export class MoviesDetailsService {
 
   constructor(private http:HttpClient) { }
 
-  public getMovies(): Observable<any> {
-    return this.http.get('https://spring-movies-cf.cfapps.io/');
+  public getMovies(): Observable<MovieDetails[]> {
+    return this.http.get<MovieDetails[]>('https://spring-movies-cf.cfapps.io/');
   }
 }

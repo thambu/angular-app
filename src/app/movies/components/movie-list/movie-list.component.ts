@@ -35,8 +35,5 @@ export class MovieListComponent implements OnInit {
      () => {console.log('Successfully loaded movies')}
    )
   }
-
-  onSelect(movie:MovieDetails) {
-    this.selectedMovie = movie;
-  }
+  
 }
