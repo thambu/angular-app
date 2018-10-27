@@ -24,7 +24,7 @@ export class MovieListComponent implements OnInit {
     .pipe(
     map((data) => {
       data.sort((a, b) => {
-          return a < b ? -1 : 1;
+          return a.name < b.name ? -1 : 1;
        });  
       return data;
    })).subscribe(
