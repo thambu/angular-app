@@ -53,3 +53,8 @@
     height: 400px;
     width: 100%;
 }
+
+.search {
+    margin-bottom: 20px;
+    text-align: center;
+}

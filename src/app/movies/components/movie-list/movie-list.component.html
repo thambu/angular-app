@@ -1,5 +1,10 @@
+<div class="search">
+    <span class="font-weight-bold">Search for a movie : </span>
+    <input [(ngModel)]="searchText" placeholder="movie name goes here">
+</div>
+
 <div class="container movieListContainer">
-    <div  *ngFor ="let movie of movies" 
+    <div  *ngFor ="let movie of movies | filter : searchText" 
     [routerLink]="['/details', movie.name]"
      class="movieDetails">
      <span class="movieDetailsRow">

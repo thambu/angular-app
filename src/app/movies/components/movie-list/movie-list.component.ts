@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class MovieListComponent implements OnInit {  
   movies;
   selectedMovie:MovieDetails;
+  searchText: string;
 
   constructor(private movieDetailsService: MoviesDetailsService,
     private orderPipe: OrderPipe,
