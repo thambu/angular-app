@@ -4,6 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MovieDetailsComponent } from './movie-details.component';
 
 import { MoviesDetailsService } from '../../services/movies-details.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('MovieDetailsComponent', () => {
   let component: MovieDetailsComponent;
@@ -12,7 +13,7 @@ describe('MovieDetailsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, HttpClientModule],
       declarations: [ MovieDetailsComponent ],
       providers: [MoviesDetailsService]
     })
