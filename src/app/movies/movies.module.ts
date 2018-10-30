@@ -13,7 +13,7 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
     OrderModule
   ],
   declarations: [
-    MovieDetailsComponent
+    //MovieDetailsComponent
   ],
   providers: [
     MoviesDetailsService

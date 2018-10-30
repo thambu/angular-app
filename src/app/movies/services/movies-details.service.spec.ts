@@ -20,7 +20,7 @@ describe('MoviesDetailsService Test', () => {
 
   it('should make an outgoing call to retrieve movie details', inject([MoviesDetailsService], (service: MoviesDetailsService) => {
     let userResponse;
-    
+
     const data = [
       {name:'Wonder Woman',
       image:'wonderWoman.jpg',
@@ -37,7 +37,6 @@ describe('MoviesDetailsService Test', () => {
       }
     );
     const req: TestRequest = httpTestingController.expectOne('https://spring-movies-cf.cfapps.io/');
-
     req.flush(data);
 
     expect(userResponse).toEqual(data);
@@ -46,7 +45,6 @@ describe('MoviesDetailsService Test', () => {
 
   it('should throw an error', inject([MoviesDetailsService], (service: MoviesDetailsService) => {
     let errorResponse;
-
     service.getMovies()
     .subscribe(
       resp => {},
